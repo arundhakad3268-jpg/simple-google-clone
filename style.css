@@ -1,0 +1,185 @@
+/* Set overall height and prevent scrolling */
+
+html,body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Remove default margin and apply base font & text alignment */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+} 
+
+/* Top header styling */
+.top-header {
+  color: black;
+  padding: 1% 2%;
+  margin-left: 2%;
+}
+
+/* Navigation links style */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 5%;
+  margin-top: 1%;
+  padding-left: 1%;
+}
+
+/* Navigation link appearance */
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Icons for user, mic and lens */
+.user-icon,.mic-icon {
+  width: 5vw;
+  height: 5vw;
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Google logo style and center alignment */
+.google-logo {
+  font-size: clamp(75px, 7vw, 85px);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1vw;
+   min-height: 25vh;        
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+}
+
+/* Individual colored letters of Google */
+.g   { color: #4285f4; }
+.o1  { color: #ea4335; }
+.o2  { color: #fbbc05; }
+.g2  { color: #34a853; }
+.l   { color: #fbbc05; }
+.e   { color: #ea4335; }
+
+/* Search section styling */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 1%;
+  
+}
+
+/* Common search box and mic icon styling */
+.search-box,.mic-icon{
+  width: 100%;
+  height: 44px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  color: #80868b;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: clamp(14px, 2vw, 18px);
+  outline: none;
+  border: 1px solid #dfe1e5;
+
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+/* Buttons below search box */
+.button-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  margin-left: 50px;
+  margin-top: 10%;
+  gap: 20px;
+  padding-left: 60px;
+  width: 40%;
+  height: 40%;
+}
+
+/* Country info at bottom-left */
+.country {
+  position: fixed;
+  padding-left: 2%;
+  color: black;
+  font-size: clamp(14px, 2vw, 18px);
+  width: auto;
+  text-align: left;
+  padding-bottom: 15%;
+  bottom: 0;
+  padding: 50px;
+  
+
+}
+
+/* Footer style */
+.footer-section {
+  color: black;
+  font-size: 2vw;
+  margin-top: 1%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 30px 10px 2%;
+  
+}
+
+/* Footer link spacing */
+.privacy, .terms, .settings {
+  padding-left: 20%;
+}
+
+/* Footer links styling */
+.footer-links{
+  list-style: none;
+  display: flex;
+  gap: 5%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Footer links appearance */
+.footer-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Wrapper around search box */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* Text input inside search box */
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+/* Mic icon specific styling */
+.mic-icon {
+  width: 24px;
+  height: 24px;
+  padding-left: 0px;
+  margin-right: 15px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
